@@ -3982,7 +3982,35 @@ AHU_SFSS_SFMSC_SFVSC_FDPM_CHWSC_RTM_RACO2C_SSPC2X_VOADM2X_SAIDC2X_RAIDC2X_SSPC:
   - RAIDC2X
   - SSPC
 
+AHU_SS_RMM_RTM_FDPM_EFPC_SFPC_HWSC_ESDC_FSAM:
+  description: "AHU with supply and exhaust pressure, flowrate control, cooling and heating valve control, fire and smoke alarms"
+  is_canonical: true
+  implements:
+  - AHU
+  - SS
+  - RMM
+  - RTM
+  - FDPM
+  - EFPC
+  - SFPC
+  - HWSC
+  - ESDC
+  - FSAM
 
+AHU_SS_RMM_STM_FDPM_EFPC_SFPC_HWRC_ESDC_FSAM:
+  description: "AHU with supply and exhaust pressure, flowrate control, cooling and heating valve control, fire and smoke alarms supply and exhaust rotational velocity sensors"
+  is_canonical: true
+  implements:
+  - AHU
+  - SS
+  - RMM
+  - STM
+  - FDPM
+  - EFPC
+  - SFPC
+  - HWRC
+  - ESDC
+  - FSAM
 ###################################
 ### Existing Non-standard Types ###
 ###################################

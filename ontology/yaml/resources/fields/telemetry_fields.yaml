@@ -3103,6 +3103,26 @@ literals:
   - ACTIVE
   - INACTIVE
 
+- heat_recovery_pump_status:
+  - ON
+  - OFF
+
+- condenser_status:
+  - ON
+  - OFF
+
+- evaporator_status:
+  - ON
+  - OFF
+
+- return_evaporative_water_temperature_sensor:
+    flexible_min: 353.15
+    flexible_max: 373.15
+
+- high_water_temperature_alarm:
+  - ACTIVE
+  - INACTIVE
+
 - high_water_temperature_alarm:
   - ACTIVE
   - INACTIVE
@@ -3110,3 +3130,35 @@ literals:
 - ultraviolet_irradiance_sensor:
     fixed_min: 0.0
     flexible_max: 2000.0
+
+- high_limit_zone_co2_concentration_setpoint:
+    fixed_min: 400.0
+    flexible_max: 1200.0
+
+- high_limit_zone_air_temperature_setpoint:
+    fixed_min: 255.9259259
+    flexible_max: 338.7037037
+
+- low_limit_zone_air_temperature_setpoint:
+    fixed_min: 255.9259259
+    flexible_max: 338.7037037
+
+- high_water_temperature_alarm:
+  - ACTIVE
+  - INACTIVE
+
+- battery_energy_capacity:
+    fixed_min: 0.0
+    flexible_max: 10000.0
+
+- supply_air_linearvelocity_sensor:
+    fixed_min: 0.0
+    flexible_max:  25.4000508
+
+- supply_fan_rotationalvelocity_sensor:
+    fixed_min: 0.0
+    flexible_max:  25.4000508
+
+- exhaust_fan_rotationalvelocity_sensor:
+    fixed_min: 0.0
+    flexible_max:  25.4000508
