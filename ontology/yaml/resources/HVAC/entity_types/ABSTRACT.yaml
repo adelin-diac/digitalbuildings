@@ -961,6 +961,7 @@ OA:
   - wind_direction_angle_sensor
   - wind_linearvelocity_sensor
   - ultraviolet_irradiance_sensor
+  - outside_air_pm2pt5_density_sensor
   uses:
   - outside_air_temperature_sensor
   implements:
@@ -4579,6 +4580,8 @@ RMM:
   guid: "162df361-7593-4e36-bf41-e7fa667244dd"
   description: "Run mode monitoring."
   is_abstract: true
+  opt_uses:
+  - run_status
   uses:
   - run_mode
 
@@ -6754,5 +6757,14 @@ FSAM:
   uses:
   - fire_alarm
   - smoke_alarm
+  implements:
+  - MONITORING
+
+SAQM:
+  description: "Simple air quality monitoring"
+  is_abstract: true
+  uses:
+  - zone_air_pm2pt5_density_sensor
+  - zone_air_voc_percentage_sensor
   implements:
   - MONITORING

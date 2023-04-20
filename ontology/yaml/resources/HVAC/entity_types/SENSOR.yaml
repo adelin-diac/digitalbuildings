@@ -250,3 +250,13 @@ SENSOR_MAZTM:
   implements:
   - /SENSOR
   - MAZTM
+
+SENSOR_ZTM_ZHM_CO2M_SAQM:
+  description: "Simple air quality sensor with VOC, CO2, temperature and humidity monitoring."
+  is_canonical: true
+  implements:
+  - /SENSOR
+  - ZTM
+  - ZHM
+  - CO2M
+  - SAQM

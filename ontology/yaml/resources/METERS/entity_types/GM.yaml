@@ -32,3 +32,10 @@ GM_PULSE:
   uses:
   - gas_flowrate_sensor
   - gas_volume_accumulator
+
+GM_GV:
+  description: "Basic gas volume meter"
+  is_canonical: true
+  implements:
+  - GM
+  - GV
