@@ -142,11 +142,11 @@ PMP_SS_RMM:
 
 PMP_CPC_RMM:
   description: "Pump with circulation pump and run mode monitoring."
-    is_canonical: true
-    implements:
-    - PMP
-    - CPC
-    - RMM
+  is_canonical: true
+  implements:
+  - PMP
+  - CPC
+  - RMM
 
 ###################################
 ### Existing Non-standard Types ###
