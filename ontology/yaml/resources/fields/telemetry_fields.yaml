@@ -3123,10 +3123,6 @@ literals:
   - ACTIVE
   - INACTIVE
 
-- high_water_temperature_alarm:
-  - ACTIVE
-  - INACTIVE
-
 - ultraviolet_irradiance_sensor:
     fixed_min: 0.0
     flexible_max: 2000.0
@@ -3142,10 +3138,6 @@ literals:
 - low_limit_zone_air_temperature_setpoint:
     fixed_min: 255.9259259
     flexible_max: 338.7037037
-
-- high_water_temperature_alarm:
-  - ACTIVE
-  - INACTIVE
 
 - battery_energy_capacity:
     fixed_min: 0.0

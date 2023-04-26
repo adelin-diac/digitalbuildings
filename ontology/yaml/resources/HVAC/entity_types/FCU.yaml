@@ -1690,6 +1690,7 @@ FCU_DSP_DFVSC_DTM_RTM:
   - RTM
 
 FCU_DFMSC_DSP_ZTC:
+  guid: "6377befd-6f12-4762-8829-0cbbbab65079"
   description: "Hybrid variable refrigerant flow unit with zone cooling and heating control, discharge fan speed modes"
   implements:
   - FCU

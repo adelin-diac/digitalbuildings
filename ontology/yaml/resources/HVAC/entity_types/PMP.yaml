@@ -141,6 +141,7 @@ PMP_SS_RMM:
   - high_pressure_status
 
 PMP_CPC_RMM:
+  guid: "93ba4524-4011-434b-a645-bf870e69f3d4"
   description: "Pump with circulation pump and run mode monitoring."
   is_canonical: true
   implements:
@@ -172,6 +173,7 @@ PMP_SS_VSC_NONCANONICAL_2:
   - chilled_supply_water_temperature_sensor
 
 PMP_SS_REFPM_REFSM_OA_CPM2X:
+  guid: "0a48fa83-2144-4200-a468-51ac2a9bb652"
   description: "air source heat pump with refrigerant temperature and pressure monitoring, 2 evaporator pumps"
   is_canonical: true
   implements:

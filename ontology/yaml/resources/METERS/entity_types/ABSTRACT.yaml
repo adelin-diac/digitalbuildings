@@ -92,9 +92,8 @@ VCM:
   - voltage_sensor
   
 GV:
+  guid: "b87ec688-c42e-404a-989a-4f5735dff24c"
   description: "Very basic gas monitoring"
   is_abstract: true
-  implements:
-  - MONITORING
   uses:
   - gas_volume_accumulator

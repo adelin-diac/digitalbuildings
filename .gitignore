@@ -9,3 +9,7 @@
 *.DS_Store
 package-lock.json
 yarn.lock
+
+**/key.json
+**/spreadsheet_token.json
+**/token_request.json

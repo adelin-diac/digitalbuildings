@@ -34,6 +34,7 @@ GM_PULSE:
   - gas_volume_accumulator
 
 GM_GV:
+  guid: "0d7472dc-9a81-4a64-b44e-2ed97e5d97a6"
   description: "Basic gas volume meter"
   is_canonical: true
   implements:

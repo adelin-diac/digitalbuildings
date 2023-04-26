@@ -245,6 +245,7 @@ SENSOR_CO2M_VOCM:
     - VOCM
 
 SENSOR_MAZTM:
+  guid: "1081adb1-f5d9-4030-ae43-366148e10397"
   description: "zone temperature monitoring with high, low alarm setpoints and unit failed alarms"
   is_canonical: true
   implements:
@@ -252,6 +253,7 @@ SENSOR_MAZTM:
   - MAZTM
 
 SENSOR_ZTM_ZHM_CO2M_SAQM:
+  guid: "9a6c642b-75ec-4c9d-a1ef-09451a637224"
   description: "Simple air quality sensor with VOC, CO2, temperature and humidity monitoring."
   is_canonical: true
   implements:

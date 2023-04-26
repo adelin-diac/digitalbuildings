@@ -64,6 +64,7 @@ IOBM:
   - bypass_phase_status
 
 OM:
+  guid: "d5caa18c-aaf3-480f-94ed-f00f2f2a1555"
   description: "output electrical monitoring, typically for a UPS."
   is_abstract: true
   uses:
@@ -153,6 +154,7 @@ BTEPM:
   - line_frequency_sensor  
 
 SBATM:
+  guid: "4473e987-bcf2-4041-9fb7-bd8857ae1839"
   description: "Simple battery monitoringy typically used with UPS"
   is_abstract: true
   uses:

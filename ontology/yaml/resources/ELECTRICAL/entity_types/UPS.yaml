@@ -76,6 +76,7 @@ UPS_PWM:
   - PWM
 
 UPS_PPWM_OM_SBATM:
+  guid: "25f0e595-2834-400d-8e21-524ac84584cc"
   description: "UPS with battery and power monitoring."
   is_canonical: true
   implements:

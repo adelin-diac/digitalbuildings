@@ -3983,6 +3983,7 @@ AHU_SFSS_SFMSC_SFVSC_FDPM_CHWSC_RTM_RACO2C_SSPC2X_VOADM2X_SAIDC2X_RAIDC2X_SSPC:
   - SSPC
 
 AHU_SS_RMM_RTM_FDPM_EFPC_SFPC_HWSC_ESDC_FSAM:
+  guid: "f7c3044f-eee2-4aa2-99eb-06b2eb72b9f5"
   description: "AHU with supply and exhaust pressure, flowrate control, cooling and heating valve control, fire and smoke alarms"
   is_canonical: true
   implements:
@@ -3998,6 +3999,7 @@ AHU_SS_RMM_RTM_FDPM_EFPC_SFPC_HWSC_ESDC_FSAM:
   - FSAM
 
 AHU_SS_RMM_STM_FDPM_EFPC_SFPC_HWRC_ESDC_FSAM:
+  guid: "496254a6-edd8-4954-9676-720fb4e0a23f"
   description: "AHU with supply and exhaust pressure, flowrate control, cooling and heating valve control, fire and smoke alarms supply and exhaust rotational velocity sensors"
   is_canonical: true
   implements:

@@ -6668,6 +6668,7 @@ HRCTMPSM:
   - MONITORING
 
 MAZTM:
+  guid: "b1066ce7-29ec-4e81-b394-2f582efd27ce"
   description: "Zone temperature monitoring for MDF room with high & low temperature alarms, sensor failed alarm "
   is_abstract: true
   uses:
@@ -6681,16 +6682,8 @@ MAZTM:
   implements:
   - OPERATIONAL
 
-SEWTM:
-  description: "Secondary water temperature monitoring"
-  opt_uses:
-  - secondary_supply_water_temperature_sensor
-  uses:
-  - secondary_return_water_temperature_sensor
-  implements:
-  - MONITORING
-
 HWTTCX2:
+  guid: "60ec0a00-3651-4563-832e-b3938dd7c1ea"
   description: "Hot water tank temperature control X2 with single setpoint"
   is_abstract: true
   opt_uses: 
@@ -6704,6 +6697,7 @@ HWTTCX2:
   - OPERATIONAL
 
 CPM2X:
+  guid: "0b2885ce-aafc-43aa-bd79-c4564de15934"
   description: "circulation pump monitoring X2"
   is_abstract: true
   uses:
@@ -6712,7 +6706,8 @@ CPM2X:
   implements:
   - MONITORING
 
-  SFPC:
+SFPC:
+  guid: "c7d69bc9-caf1-4f8c-a2ef-d4e23fa6bbd7"
   description: "supply pressure monitoring, flow control."
   is_abstract: true
   opt_uses:
@@ -6727,6 +6722,7 @@ CPM2X:
   - OPERATIONAL
 
 EFPC:
+  guid: "5ef5d82b-5ec1-41fe-95aa-6f2a31c713a4"
   description: "exhaust pressure monitoring, flow control."
   is_abstract: true
   opt_uses:
@@ -6740,6 +6736,7 @@ EFPC:
   - OPERATIONAL
 
 ESDC:
+  guid: "a77e848c-3e69-466c-92bc-c80a1d702082"
   description: "exhaust and supply air damper control."
   is_abstract: true
   opt_uses:
@@ -6752,6 +6749,7 @@ ESDC:
   - CONTROL
 
 FSAM:
+  guid: "6bbf97b0-67a5-416c-93ec-f6e9c2e41b92"
   description: "fire and smoke alarm monitoring."
   is_abstract: true
   uses:
@@ -6761,6 +6759,7 @@ FSAM:
   - MONITORING
 
 SAQM:
+  guid: "76359ff8-fb7e-415a-ad55-40a49cc8825d"
   description: "Simple air quality monitoring"
   is_abstract: true
   uses:
