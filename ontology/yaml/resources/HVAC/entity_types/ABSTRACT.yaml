@@ -6639,8 +6639,6 @@ DSTLM:
   - heating_water_temperature_sensor_2
   - water_high_level_status_2
   - water_low_level_status_2
-  - failed_alarm
-  - run_status
   implements:
   - MONITORING
 
