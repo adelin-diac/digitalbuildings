@@ -84,3 +84,13 @@ UPS_PPWM_OM_SBATM:
   - PPWM
   - OM
   - SBATM
+
+UPS_SS_PPWM_OM:
+  guid: 26361345-436b-422e-8431-039bd77a5374
+  description: "UPS with power monitoring and output monitoring."
+  is_canonical: true
+  implements:
+  - UPS
+  - SS
+  - PPWM
+  - OM
