@@ -748,3 +748,10 @@ FAN_SS_MSM:
   implements:
   - FAN
   - MSM
+
+FAN_EFVSC3X:
+  guids: "4428b874-8614-45e5-8567-a4db42046d86"
+  desccription: "Basic exhaust fan variable speed control with feedback and sensoring for three fans"
+  implements:
+  - FAN
+  - EFVSC3X
