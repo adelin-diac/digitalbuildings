@@ -149,6 +149,14 @@ PMP_CPC_RMM:
   - CPC
   - RMM
 
+PMP_CPC:
+  guid: e0029ba1-f973-4d4d-97e9-64c956d27777
+  description: "Pump with circulation pump control."
+  is_canonical: true
+  implements:
+  - PMP
+  - CPC
+
 ###################################
 ### Existing Non-standard Types ###
 ###################################
