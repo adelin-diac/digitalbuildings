@@ -97,3 +97,11 @@ DWST_CPC_RMM_SS_REFPM_EPMX2_HRCTMPSM:
   - REFPM
   - EPMX2
   - HRCTMPSM
+
+DWST_PHWDT_SHWDT_GWH3X:
+  description: "DWST with three gas fired water heaters controlled by 1 enable."
+  is_canonical: true
+  implements:
+  - SS
+  - PHWDT
+  - SHWDT
