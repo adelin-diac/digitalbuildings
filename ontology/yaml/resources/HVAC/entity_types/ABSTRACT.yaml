@@ -6767,6 +6767,7 @@ SAQM:
   - MONITORING
 
 GWH3X:
+  guid: "6cdc4e41-ab97-41d8-bbd4-77c02017ccac"
   description: "Gas fired water heater with 3 tanks and single enable (heater_run_command)"
   is_abstract: true
   uses:

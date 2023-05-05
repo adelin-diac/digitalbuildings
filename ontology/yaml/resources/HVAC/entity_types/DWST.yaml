@@ -99,6 +99,7 @@ DWST_CPC_RMM_SS_REFPM_EPMX2_HRCTMPSM:
   - HRCTMPSM
 
 DWST_PHWDT_SHWDT_GWH3X:
+  guid: "8aeb3780-b3b5-4c4a-9bca-87616117a2ec"
   description: "DWST with three gas fired water heaters controlled by 1 enable."
   is_canonical: true
   implements:
