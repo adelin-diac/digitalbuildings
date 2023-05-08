@@ -6757,12 +6757,11 @@ FSAM:
   - MONITORING
 
 SAQM:
-  guid: "76359ff8-fb7e-415a-ad55-40a49cc8825d"
   description: "Simple air quality monitoring"
   is_abstract: true
   uses:
   - zone_air_pm2pt5_density_sensor
-  - zone_air_voc_percentage_sensor
+  - zone_air_voc_concentration_sensor
   opt_uses:
   - zone_air_pm10pt0_density_sensor
   implements:
