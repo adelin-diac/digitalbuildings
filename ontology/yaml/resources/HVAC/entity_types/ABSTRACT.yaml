@@ -6757,6 +6757,7 @@ FSAM:
   - MONITORING
 
 SAQM:
+  guid: "22020401-1cb5-47ed-a137-aa45b1f2f870"
   description: "Simple air quality monitoring"
   is_abstract: true
   uses:
