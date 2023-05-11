@@ -3186,3 +3186,7 @@ literals:
 - season_mode:
   - SUMMER
   - WINTER
+
+- heating_water_temperature_setpoint:
+    fixed_min: 0.0
+    flexible_max: 200.0

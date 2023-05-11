@@ -6791,6 +6791,7 @@ GWH3X:
   - CONTROL
 
 HWTC:
+  guid: "897e57ce-353b-408f-96a4-c33d59b5be83"
   description: "Hot water temperature control"
   is_abstract: true
   uses:
