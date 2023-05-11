@@ -1176,6 +1176,7 @@ CPC:
   - circulation_pump_run_command
   - circulation_pump_run_status
   opt_uses:
+  - failed_alarm
   - failed_circulation_pump_alarm
 
 ### NET NEW TYPES
