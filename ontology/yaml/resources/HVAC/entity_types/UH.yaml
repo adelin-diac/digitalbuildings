@@ -35,3 +35,11 @@ UH_SS_DSP_HTZC:
   - SS
   - DSP
   - HTZC
+
+UH_FA:
+  guid: "281fd317-04e5-43fd-b7ff-fb42aa5363f6"
+  description: "Unit heater with failed alarm only."
+  implements:
+  - UH
+  uses:
+  - failed_alarm

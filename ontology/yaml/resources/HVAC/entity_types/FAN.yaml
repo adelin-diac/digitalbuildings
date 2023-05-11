@@ -755,3 +755,11 @@ FAN_EFVSC:
   implements:
   - FAN
   - EFVSC
+
+FAN_VSC_WDPM:
+  guid: "bc83a8c4-404f-42b4-8961-e78093fb7516"
+  description: "Basic fan with variable speed control and differential pressure monitoring"
+  implements:
+  - FAN
+  - VSC
+  - WDPM
