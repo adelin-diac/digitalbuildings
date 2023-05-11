@@ -4013,6 +4013,33 @@ AHU_SS_RMM_STM_FDPM_EFPC_SFPC_HWRC_ESDC_FSAM:
   - HWRC
   - ESDC
   - FSAM
+
+AHU_EFVSC_EDM_SFVSC_SDM_STDSPC_RTM_STC_ETM_OA_MTM_CPVSC2X_SEDPM_DXC_SEMC_SFM_HWVPM_HRCM_WDPCA2X_RMM:
+  guid: "e7cf48c0-862f-4dc0-9462-ea35cf53b16f"
+  description: "AHU with dx compressor monitoring, supply temperature, supply and exhaust fan control."
+  is_canonical: true
+  implements:
+  - AHU
+  - EFVSC
+  - EDM
+  - SFVSC
+  - SDM
+  - STDSPC
+  - RTM
+  - STC
+  - ETM
+  - OA
+  - MTM
+  - CPVSC2X
+  - SEDPM
+  - DXC
+  - SEMC
+  - SFM
+  - HWVPM
+  - HRCM
+  - WDPCA2X
+  - RMM
+
 ###################################
 ### Existing Non-standard Types ###
 ###################################

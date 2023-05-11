@@ -51,3 +51,19 @@ TK_DSTLM:
   implements:
   - /TK # Inherits from global namespace
   - DSTLM
+
+TK_TLM:
+  guid: "bda6a1b1-f8be-4d2f-9116-106cec6b9734"
+  description: "Tank with level monitoring "
+  is_canonical: true
+  implements:
+  - /TK # Inherits from global namespace
+  - TLM
+
+TK_TLM2X:
+  guid: "a41d1fe7-9c43-4fbc-9432-e54383bc4a15"
+  description: "Tank with level monitoring "
+  is_canonical: true
+  implements:
+  - /TK # Inherits from global namespace
+  - TLM2X

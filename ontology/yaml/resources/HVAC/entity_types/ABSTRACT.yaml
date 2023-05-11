@@ -5654,6 +5654,11 @@ CPVSC2X:
   guid: "1be3e1ba-1a25-4b9a-9784-e4bbd9313db5"
   description: "Circulation pump variable speed control with 2 circulation pumps."
   is_abstract: true
+  opt_uses:
+  - failed_circulation_pump_alarm_1
+  - failed_circulation_pump_alarm_2
+  - circulation_pump_speed_percentage_setpoint
+  - low_supply_water_temperature_alarm
   uses:
   - circulation_pump_run_command_1
   - circulation_pump_run_command_2
@@ -6785,6 +6790,16 @@ GWH3X:
   implements:
   - CONTROL
 
+HWTC:
+  description: "Hot water temperature control"
+  is_abstract: true
+  uses:
+  - heating_water_temperature_setpoint
+  - heating_water_temperature_sensor
+  - high_water_temperature_alarm
+  implements:
+  - CONTROL
+
 PSM:
   guid: "893e5835-863c-4ca9-8971-a01390f405b6"
   description: "Pump pressure status monitoring."
@@ -6796,3 +6811,120 @@ PSM:
   - failed_alarm
   implements:
   - MONITORING
+
+TLM:
+  guid: "5ea2e973-4792-40d8-9656-282c1386f1fc"
+  description: "Level and temperature monitoring"
+  is_abstract: true
+  uses:
+  - supply_water_temperature_sensor
+  - water_high_level_status
+  - water_low_level_status
+  - high_water_temperature_alarm
+  - high_water_temperature_setpoint
+  implements:
+  - MONITORING
+
+TLM2X:
+  guid: "9a2998c7-01f3-4d37-a5ad-d88a33a94abb"
+  description: "Level and temperature monitoring 2x"
+  is_abstract: true
+  uses:
+  - supply_water_temperature_sensor_1
+  - water_high_level_status_1
+  - water_low_level_status_1
+  - high_water_temperature_setpoint_1
+  - high_water_temperature_alarm_1
+  - supply_water_temperature_sensor_2
+  - water_high_level_status_2
+  - water_low_level_status_2
+  - high_water_temperature_setpoint_2
+  - high_water_temperature_alarm_2
+  implements:
+  - MONITORING
+
+PSM2X:
+  guid: "6d252a92-b64f-41db-98e4-444b10f7977d"
+  description: "Pressure and status monitoring for dual pump system"
+  is_abstract: true
+  uses:
+  - low_pressure_status_1
+  - low_pressure_status_2
+  - failed_alarm_1
+  - failed_alarm_2
+  - boost_pump_run_status_1
+  - boost_pump_run_status_2
+  implements:
+  - MONITORING
+
+SEDPM:
+  guid: "f0ba2aad-571d-4a5b-9895-9ffe46115245"
+  description: "Supply, exhaust pressure monitoring"
+  is_abstract: true
+  uses:
+  - supply_air_differential_pressure_sensor
+  - exhaust_air_differential_pressure_sensor
+  implements:
+  - MONITORING
+
+DXC:
+  guid: "59cb5f10-6ef9-495c-885d-b4dee0df05f4"
+  description: "Compressor with 3 stage cooling control, single status"
+  is_abstract: true
+  uses:
+  - cooling_percentage_command
+  - compressor_run_command_1
+  - compressor_run_command_2
+  - compressor_run_command_3
+  - compressor_run_status
+  - failed_compressor_alarm
+  implements:
+  - CONTROL
+
+SEMC:
+  guid: "fad56f36-e8b1-4f4d-80d4-a0784d50283e"
+  description: "Season mode control"
+  is_abstract: true
+  uses:
+  - supply_air_temperature_setpoint_1
+  - supply_air_temperature_setpoint_2
+  - winter_outside_temperature_setpoint
+  - summer_outside_temperature_setpoint
+  - supply_air_deadband_temperature_setpoint
+  - season_mode
+  implements:
+  - CONTROL
+
+HWVPM:
+  guid: "fb676761-33f0-40af-8949-b85ec940b7b4"
+  description: "Heating water valve percent monitoring"
+  is_abstract: true
+  uses:
+  - heating_water_valve_percentage_command
+  implements: 
+  - MONITORING
+
+HRCM:
+  guid: "c5f117d5-576a-4942-b979-f4bfbde0c93f"
+  description: "Heat recovery coil monitoring"
+  is_abstract: true
+  uses:
+  - leaving_heat_recovery_coil_temperature_sensor
+  implements:
+  - MONITORING
+
+WDPCA2X:
+  guid: "f7b49a53-00b3-4353-adcb-aec5fe6bbb18"
+  description: "Differential pressure control on run around coil with 2 pumps."
+  is_abstract: true
+  opt_uses:
+  - pressurization_request_count
+  - high_differential_pressure_alarm_1
+  - high_differential_pressure_alarm_2
+  - low_differential_pressure_alarm_1
+  - low_differential_pressure_alarm_2
+  uses:
+  - differential_pressure_sensor
+  - differential_pressure_setpoint
+  implements:
+  - OPERATIONAL

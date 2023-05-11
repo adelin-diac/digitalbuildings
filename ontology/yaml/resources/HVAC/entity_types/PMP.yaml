@@ -165,6 +165,14 @@ PMP_PSM:
   - PMP
   - PSM
 
+PMP_PSM2X:
+  guid: "e53db127-cb56-49fd-8752-f621e1fbe615"
+  description: "Dual pump for gas pressure with pressure alarms and status monitoring"
+  is_canonical: true
+  implements:
+  - PMP
+  - PSM2X
+
 ###################################
 ### Existing Non-standard Types ###
 ###################################
