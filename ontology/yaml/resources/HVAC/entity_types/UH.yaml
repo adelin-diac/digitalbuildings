@@ -39,7 +39,6 @@ UH_SS_DSP_HTZC:
 UH_FA:
   guid: "281fd317-04e5-43fd-b7ff-fb42aa5363f6"
   description: "Unit heater with failed alarm only."
+  is_canonical: true
   implements:
   - UH
-  uses:
-  - failed_alarm

@@ -6930,3 +6930,12 @@ WDPCA2X:
   - differential_pressure_setpoint
   implements:
   - OPERATIONAL
+
+FA:
+  guid: "07bb0696-d13f-4eef-a634-ed2fd620ff21"
+  description: "Failed alarm"
+  is_abstract: true
+  uses:
+  - failed_alarm
+  implements:
+  - MONITORING
