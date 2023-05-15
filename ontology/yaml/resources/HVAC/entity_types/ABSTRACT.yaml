@@ -6939,3 +6939,21 @@ FA:
   - failed_alarm
   implements:
   - MONITORING
+
+PSM:
+  description: "Pressure status monitoring"
+  is_abstract: true
+  uses:
+  - air_pressure_status
+  implements:
+  - MONITORING
+
+RSM:
+  description: "Run status monitoring"
+  is_abstract: true
+  uses:
+  - run_status
+  opt_uses:
+  - failed_alarm
+  implements:
+  - OPERATIONAL
