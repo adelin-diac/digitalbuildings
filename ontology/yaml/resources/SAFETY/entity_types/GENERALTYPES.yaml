@@ -110,3 +110,10 @@ HDS:
   is_abstract: true
   implements:
   - /SENSOR
+
+VBS:
+  guid: "0a5d841a-2e96-47c0-af76-66690f8f8e63"
+  description: "Vibration sensor."
+  is_abstract: true
+  implements:
+  - /SENSOR

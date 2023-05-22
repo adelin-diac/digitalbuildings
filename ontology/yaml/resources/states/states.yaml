@@ -96,3 +96,15 @@ EXTRACT: "AHU run mode"
 
 SUMMER: "For devices with control based on outdoor temperature"
 WINTER: "For devices with control based on outdoor temperature"
+
+# For elevator 
+GROUND: "Elevator floor status"
+FIRST: "Elevator floor status"
+SECOND: "Elevator floor status"
+THIRD: "Elevator floor status"
+FOURTH: "Elevator floor status"
+FIFTH: "Elevator floor status"
+SIXTH: "Elevator floor status"
+
+PARKING: "Elevator returning to default floor"
+DOOR: "Elevator door opening"

@@ -3190,3 +3190,31 @@ literals:
 - heating_water_temperature_setpoint:
     fixed_min: 0.0
     flexible_max: 200.0
+
+- elevator_vibration_frequency_alarm:
+  - ACTIVE
+  - INACTIVE
+- heater_vibration_frequency_alarm:
+  - ACTIVE
+  - INACTIVE 
+- gas_heater_vibration_frequency_alarm:
+  - ACTIVE
+  - INACTIVE
+
+- floor_status:
+  - GROUND
+  - FIRST
+  - SECOND
+  - THIRD
+  - FOURTH
+  - FIFTH
+  - SIXTH
+
+- max_load_alarm:
+  - ACTIVE
+  - INACTIVE
+
+- elevator_status:
+  - NORMAL
+  - PARKING
+  - DOOR

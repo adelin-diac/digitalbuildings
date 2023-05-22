@@ -1699,3 +1699,12 @@ FCU_DFMSC_DSP_ZTC:
   - ZTM
   uses:
   - failed_alarm
+
+FCU_DFMSC_ZTC_RMM_FM:
+  guid: "427449b5-ec16-4034-9930-ce9a7204a420"
+  description: "Variable refrigerant flow unit with zone air temperature monitoring, fan speed modes"
+  implements:
+  - DFMSC
+  - ZTC
+  - RMM
+  - FM

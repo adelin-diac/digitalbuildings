@@ -2946,8 +2946,8 @@ AHU_DFFC_ZTC_CHWZTC_HWZTC_ECONZ_DTM_RTM_CO2C_AHAC:
   - AHAC
 
 AHU_RTC_RHC_FDPM_REFM_WLDS:
-  description: "AHU with return temperature and humidity control, filter monitoring, and refrigerant and water leak monitoring. "
   guid: "0fa6f1e1-279d-44e3-a865-e9ed8cbbd7f2"
+  description: "AHU with return temperature and humidity control, filter monitoring, and refrigerant and water leak monitoring. "
   is_canonical: true
   implements:
   - AHU

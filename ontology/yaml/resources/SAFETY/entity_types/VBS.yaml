@@ -12,19 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ELV_SS:
-  guid: "88818ae2-dd97-4292-82a7-acbbd76859db"
-  description: "Elevator run status monitoring."
-  is_canonical: true
-  implements:
-  - ELV
-  - SS  
+### ABSTRACT TYPES
 
-ELV_EPM_BEA:
-  guid: "22680ec1-29ab-402b-b3ac-d1be3b950e0a"
-  description: "Elevator with position/floor and basic alarms."
+VBS_VA6X:
+  description: "Vibration system with 6 sensors."
   is_canonical: true
   implements:
-  - ELV
-  - EPM
-  - BEA
+  - VBS 
+  - VA6X
