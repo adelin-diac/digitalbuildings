@@ -173,13 +173,13 @@ PMP_PSM2X:
   - PMP
   - PSM2X
 
-PMP_RSM_PSM:
-  description: "Pump with run status and pressure status monitoring"
+PMP_RSM_APSM:
+  description: "Pump with run status and air pressure status monitoring"
   is_canonical: true
   implements:
   - PMP
   - RSM
-  - PSM
+  - APSM
 
 ###################################
 ### Existing Non-standard Types ###

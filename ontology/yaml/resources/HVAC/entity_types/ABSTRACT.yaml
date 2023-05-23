@@ -6940,7 +6940,7 @@ FA:
   implements:
   - MONITORING
 
-PSM:
+APSM:
   guid: "ee18e6df-cd0c-4d19-a27c-72100dc87938"
   description: "Pressure status monitoring"
   is_abstract: true
