@@ -15,6 +15,7 @@
 ### ABSTRACT TYPES
 
 VBS_VA6X:
+  guid: "e5bb75f4-f51f-4874-bd1c-785c9bf97b3e"
   description: "Vibration system with 6 sensors."
   is_canonical: true
   implements:

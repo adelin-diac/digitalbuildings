@@ -174,6 +174,7 @@ PMP_PSM2X:
   - PSM2X
 
 PMP_RSM_APSM:
+  guid: "8c35a3e0-d611-4176-a144-1e4eb78bb72d"
   description: "Pump with run status and air pressure status monitoring"
   is_canonical: true
   implements:
