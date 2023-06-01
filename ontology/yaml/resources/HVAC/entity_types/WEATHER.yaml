@@ -23,3 +23,12 @@ WEATHER_OA:
   implements:
   - WEATHER
   - OA
+
+WEATHER_OA_OAQM:
+  guid: "9c624227-668e-49a2-9c89-1b78ef94af31"
+  description: "Weather station with outdoor air quality monitoring."
+  is_canonical: true
+  implements:
+  - WEATHER
+  - OA
+  - OAQM
