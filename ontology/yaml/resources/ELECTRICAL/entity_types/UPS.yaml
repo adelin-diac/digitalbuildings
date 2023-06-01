@@ -94,3 +94,12 @@ UPS_SS_PPWM_OM:
   - SS
   - PPWM
   - OM
+
+UPS_BBM_UPSM:
+  guid: "ac873752-712d-4e07-bd13-c66de14c0af2"
+  description: "Basic UPS with battery monitoring"
+  is_canonical: true
+  implements:
+  - UPS
+  - BBM
+  - UPSM

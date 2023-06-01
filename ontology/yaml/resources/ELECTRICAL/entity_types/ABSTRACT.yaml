@@ -213,3 +213,21 @@ SRC2:
   - source2_phase3_phase1_over_voltage_status
   - source2_over_voltage_status
   - source2_lost_power_alarm
+
+BBM:
+  guid: "fa30063c-8360-4948-a67a-c0776c09292c"
+  description: "Basic battery monitoring, typically for a UPS"
+  is_abstract: true
+  uses:
+  - battery_status
+  - low_battery_charge_alarm
+
+UPSM:
+  guid: "03c5d547-f4f1-4a84-afb9-cfebb5f32dbf"
+  description: "Basic electrical bypass and UPS status monitoring"
+  is_abstract: true
+  uses:
+  - run_status
+  - bypass_status
+  opt_uses:
+  - failed_alarm
