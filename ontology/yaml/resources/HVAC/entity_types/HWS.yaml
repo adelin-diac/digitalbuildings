@@ -323,6 +323,15 @@ HWS_PWDT_HWTTCX2_SEWTM:
   - HWTTCX2
   - SEWTM
 
+HWS_CPVSC2X_SWTC:
+  guid: "8c3d30b5-0bca-4f78-9cac-aefae3bd9c3c"
+  description: "HWS with temperature control by pump speed, dual pump setup"
+  is_canonical: true
+  implements:
+  - HWS
+  - CPVSC2X
+  - SWTC
+
 ###################################
 ### Existing Non-standard Types ###
 ###################################

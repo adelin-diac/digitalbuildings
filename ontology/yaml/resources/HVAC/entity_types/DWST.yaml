@@ -106,3 +106,10 @@ DWST_PHWDT_SHWDT_GWH3X:
   - SS
   - PHWDT
   - SHWDT
+
+DWST_GWH3X:
+  guid: "d6559fed-2eac-438e-8769-a7581a08973f"
+  description: "DWST with three gas fired water heaters controlled by 1 enable."
+  is_canonical: true
+  implements:
+  - GWH3X

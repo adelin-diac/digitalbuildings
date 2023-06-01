@@ -108,3 +108,6 @@ SIXTH: "Elevator floor status"
 
 PARKING: "Elevator returning to default floor"
 DOOR: "Elevator door opening"
+
+HEATERA: "Option A for dual boiler system"
+HEATERB: "Option B for dual boiler system"

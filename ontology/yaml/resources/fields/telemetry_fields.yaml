@@ -3230,3 +3230,8 @@ literals:
   - NORMAL
   - PARKING
   - DOOR
+
+- heater_run_mode:
+  - HEATERA
+  - HEATERB
+  - AUTO
