@@ -4040,6 +4040,21 @@ AHU_EFVSC_EDM_SFVSC_SDM_STDSPC_RTM_STC_ETM_OA_MTM_CPVSC2X_SEDPM_DXC_SEMC_SFM_HWV
   - WDPCA2X
   - RMM
 
+AHU_HTSC_VOADM_ETM_RMM_FDPM2X_RSM_SEFC_FAM_HRC:
+  description: "Unit with temperature monitoring, differential pressure sensors and heat recovery control."
+  is_canonical: true
+  implements:
+  - AHU
+  - HTSC
+  - VOADM
+  - ETM
+  - RMM
+  - FDPM2X
+  - RSM
+  - SEFC
+  - FAM
+  - HRC
+
 ###################################
 ### Existing Non-standard Types ###
 ###################################

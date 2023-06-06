@@ -3235,3 +3235,12 @@ literals:
   - HEATERA
   - HEATERB
   - AUTO
+
+- heat_recovery_run_mode:
+  - OFF
+  - ON
+  - STARTUP
+  - WARMUP
+  - OVERRUN
+  - INTERMITTENT
+  - FIREMODE

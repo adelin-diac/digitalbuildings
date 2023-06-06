@@ -111,3 +111,10 @@ DOOR: "Elevator door opening"
 
 HEATERA: "Option A for dual boiler system"
 HEATERB: "Option B for dual boiler system"
+
+# FOR HEAT RECOVERY UNIT
+STARTUP: "Operation mode where unit is starting up."
+WARMUP: "Operation mode where unit is warming up."
+OVERRUN: ""
+INTERMITTENT: ""
+FIREMODE: "Operation mode during fire alarm."
