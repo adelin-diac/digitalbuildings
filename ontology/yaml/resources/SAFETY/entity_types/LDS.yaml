@@ -108,3 +108,12 @@ LDS_WLA_WLDS_WLS:
   - WLA
   - WLDS
   - WLS
+
+LDS_WLDS10X_WLS10X_WLA10X_BCM10X:
+  description: "Water Leak sensing, broken cable sensing device, leak sensing cables, cable break distance sensors all 10X."
+  is_canonical: true
+  implements:
+  - WLDS10X
+  - WLS10X
+  - WLA10X
+  - BCM10X
