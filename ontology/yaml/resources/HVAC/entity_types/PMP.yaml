@@ -182,6 +182,13 @@ PMP_RSM_APSM:
   - RSM
   - APSM
 
+PMP_RSM:
+  description: "Pump with run status monitoring"
+  is_canonical: true
+  implements:
+  - PMP
+  - RSM
+
 PMP_CPVSC2X_WDPC:
   guid: "5d220765-8d3a-4624-8691-15075369b5fb"
   description: "Dual pump setup with variable speed control and pressure control"
