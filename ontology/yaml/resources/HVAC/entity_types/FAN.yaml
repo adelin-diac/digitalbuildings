@@ -492,7 +492,15 @@ FAN_SS_VSC_SSPC_FDPSM:
   - VSC
   - SSPC
   - FDPSM
-  
+
+FAN_RSM:
+  guid: "de8fef51-f01c-4876-94f2-f1a95c53d015"
+  description: "Fan with run status monitoring."
+  is_canonical: true
+  implements:
+  - FAN
+  - RSM
+
 ###################################
 ### Existing Non-standard Types ###
 ###################################
