@@ -114,6 +114,7 @@ VA6X:
   - gas_heater_vibration_frequency_alarm_2 
 
 BCM10X:
+  guid: "02bfb60c-7a2d-46a3-bf9d-cdb2799f18a5"
   description: "Broken cable monitoring 10X."
   is_abstract: true
   uses:
@@ -129,6 +130,7 @@ BCM10X:
   - broken_cable_alarm_10
 
 WLA10X:
+  guid: "68572ec1-0694-4522-b401-9a213096d93e"
   description: "Water leak monitoring 10X."
   is_abstract: true
   uses:
@@ -145,6 +147,7 @@ WLA10X:
 
 
 WLS10X:
+  guid: "a8df1f47-468c-4a3c-ac1d-04ea90e6a0a0"
   description: "Water leak location monitoring 10X."
   is_abstract: true
   uses:
@@ -160,6 +163,7 @@ WLS10X:
   - water_leak_cable_distance_sensor_10
 
 WLDS10X:
+  guid: "d74d771c-56a4-4cbd-9f62-415c0f72bb54"
   description: "Basic water leak monitoring 10X."
   is_abstract: true
   uses:

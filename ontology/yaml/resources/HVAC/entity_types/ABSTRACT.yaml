@@ -6987,6 +6987,7 @@ OAQM:
   - MONITORING
 
 HT2SRC:
+  guid: "45724a55-29b3-4f99-a63a-a378312e5989"
   description: "2 boiler system with supply return temperature control."
   is_abstract: true
   uses:
@@ -7006,12 +7007,14 @@ HT2SRC:
   - CONTROL
 
 HRMM:
+  guid: "4946b2e8-ec6a-43f6-b83c-d7882ad9211a"
   description: "Boiler run mode monitoring."
   is_abstract: true
   uses:
   - heater_run_mode
 
 SEFC:
+  guid: "5da756f2-1a82-4e90-bc26-df07ac618984"
   description: "Supply fan and exhaust fan control."
   is_abstract: true
   uses:
@@ -7029,6 +7032,7 @@ SEFC:
   - CONTROL
 
 FAM:
+  guid: "0bf09aac-e5c1-4017-98ce-f746b5d12dec"
   description: "Fire Alarm monitoring"
   is_abstract: true
   uses:
@@ -7037,6 +7041,7 @@ FAM:
   - MONITORING
 
 HRC:
+  guid: "0cfb3f0d-7713-4e5b-8ad8-1abe4e0b82aa"
   description: "Heat recovery run mode control"
   is_abstract: true
   uses:

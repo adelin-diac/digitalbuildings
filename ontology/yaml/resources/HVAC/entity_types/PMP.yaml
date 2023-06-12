@@ -183,6 +183,7 @@ PMP_RSM_APSM:
   - APSM
 
 PMP_RSM:
+  guid: "b8e70769-b787-4ec6-ac6c-08a0df945b59"
   description: "Pump with run status monitoring"
   is_canonical: true
   implements:

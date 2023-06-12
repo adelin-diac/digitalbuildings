@@ -4041,6 +4041,7 @@ AHU_EFVSC_EDM_SFVSC_SDM_STDSPC_RTM_STC_ETM_OA_MTM_CPVSC2X_SEDPM_DXC_SEMC_SFM_HWV
   - RMM
 
 AHU_HTSC_VOADM_ETM_RMM_FDPM2X_RSM_SEFC_FAM_HRC:
+  guid: "31cdbdd1-f443-41ea-b65d-81fc700bb274"
   description: "Unit with temperature monitoring, differential pressure sensors and heat recovery control."
   is_canonical: true
   implements:

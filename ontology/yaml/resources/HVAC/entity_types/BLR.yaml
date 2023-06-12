@@ -273,6 +273,7 @@ BLR_SS_SWTC_WDPC:
   - WDPC
 
 BLR_HT2SRC_HRMM:
+  guid: "5c4f6e53-18dd-47c1-8560-a43e0b048d86"
   description: "2 boiler system with supply return temperature control."
   is_canonical: true
   implements:

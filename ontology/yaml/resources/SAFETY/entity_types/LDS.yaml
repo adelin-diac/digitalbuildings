@@ -110,6 +110,7 @@ LDS_WLA_WLDS_WLS:
   - WLS
 
 LDS_WLDS10X_WLS10X_WLA10X_BCM10X:
+  guid: "27bcbdcb-3878-4ab4-8d3d-6e82ca3af354"
   description: "Water Leak sensing, broken cable sensing device, leak sensing cables, cable break distance sensors all 10X."
   is_canonical: true
   implements:
