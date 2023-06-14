@@ -182,13 +182,13 @@ PMP_RSM_APSM:
   - RSM
   - APSM
 
-PMP_RSM:
-  guid: "b8e70769-b787-4ec6-ac6c-08a0df945b59"
-  description: "Pump with run status monitoring"
-  is_canonical: true
-  implements:
-  - PMP
-  - RSM
+# PMP_RSM:
+#   guid: "b8e70769-b787-4ec6-ac6c-08a0df945b59"
+#   description: "Pump with run status monitoring"
+#   is_canonical: true
+#   implements:
+#   - PMP
+#   - RSM
 
 PMP_CPVSC2X_WDPC:
   guid: "5d220765-8d3a-4624-8691-15075369b5fb"
@@ -198,6 +198,15 @@ PMP_CPVSC2X_WDPC:
   - PMP
   - CPVSC2X
   - WDPC
+
+PMP_SS_APSM:
+  guid: "81385f59-1f99-4931-8c35-00fd95a4d86d"
+  description: "Typical pump with air pressure status monitoring"
+  is_canonical: true
+  implements:
+  - PMP
+  - SS
+  - APSM
 
 ###################################
 ### Existing Non-standard Types ###
