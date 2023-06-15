@@ -1464,6 +1464,9 @@ VOCM:
   guid: "d1d343aa-9b3a-41aa-99fe-850c2ba355a8"
   description: "Volatile organic compound monitoring."
   is_abstract: true
+  opt_uses:
+  - zone_air_pm2pt5_density_sensor
+  - zone_air_pm10pt0_density_sensor
   uses:
   - zone_air_voc_concentration_sensor
   implements:
@@ -6760,18 +6763,6 @@ FSAM:
   uses:
   - fire_alarm
   - smoke_alarm
-  implements:
-  - MONITORING
-
-SAQM:
-  guid: "22020401-1cb5-47ed-a137-aa45b1f2f870"
-  description: "Simple air quality monitoring"
-  is_abstract: true
-  uses:
-  - zone_air_pm2pt5_density_sensor
-  - zone_air_voc_concentration_sensor
-  opt_uses:
-  - zone_air_pm10pt0_density_sensor
   implements:
   - MONITORING
 
