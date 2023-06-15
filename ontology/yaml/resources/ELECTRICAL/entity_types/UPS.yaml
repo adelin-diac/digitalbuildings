@@ -102,4 +102,4 @@ UPS_SS_UPSBM:
   implements:
   - UPS
   - SS
-  - UPSM
+  - UPSBM
