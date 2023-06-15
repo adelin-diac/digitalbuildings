@@ -23,6 +23,7 @@ SS:
   - failed_alarm
   - lost_power_alarm
   - power_status
+  - bypass_status
 
 IOBM:
   guid: "d5c39e44-20c7-4193-9914-5f1b9225fffa"
@@ -175,6 +176,7 @@ UPSBM:
   - inverter_status
   - inverter_mode
   - overload_alarm
+  - low_battery_charge_alarm
   uses:
   - remaining_charge_time_sensor
   - battery_voltage_sensor
@@ -214,20 +216,21 @@ SRC2:
   - source2_over_voltage_status
   - source2_lost_power_alarm
 
-BBM:
-  guid: "fa30063c-8360-4948-a67a-c0776c09292c"
-  description: "Basic battery monitoring, typically for a UPS"
-  is_abstract: true
-  uses:
-  - battery_status
-  - low_battery_charge_alarm
+# removed as review for UPS PR came back
+# BBM:
+#   guid: "fa30063c-8360-4948-a67a-c0776c09292c"
+#   description: "Basic battery monitoring, typically for a UPS"
+#   is_abstract: true
+#   uses:
+#   - battery_status
+#   - low_battery_charge_alarm
 
-UPSM:
-  guid: "03c5d547-f4f1-4a84-afb9-cfebb5f32dbf"
-  description: "Basic electrical bypass and UPS status monitoring"
-  is_abstract: true
-  uses:
-  - run_status
-  - bypass_status
-  opt_uses:
-  - failed_alarm
+# UPSM:
+#   guid: "03c5d547-f4f1-4a84-afb9-cfebb5f32dbf"
+#   description: "Basic electrical bypass and UPS status monitoring"
+#   is_abstract: true
+#   uses:
+#   - run_status
+#   - bypass_status
+#   opt_uses:
+#   - failed_alarm

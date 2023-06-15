@@ -112,6 +112,4 @@ DOOR: "Elevator door opening"
 HEATERA: "Option A for dual boiler system"
 HEATERB: "Option B for dual boiler system"
 
-# FOR HEAT RECOVERY UNIT
-OVERRUN: ""
-INTERMITTENT: ""
+INTERMITTENT: "todo"
