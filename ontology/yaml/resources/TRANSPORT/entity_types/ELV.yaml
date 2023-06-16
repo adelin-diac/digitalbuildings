@@ -21,6 +21,7 @@ ELV_SS:
   - SS  
 
 ELV_EPM_SS:
+  guid: "bf92c85b-239c-4e2b-9168-a245d18fc27b"
   description: "Elevator with position/floor and basic alarms."
   is_canonical: true
   implements:
