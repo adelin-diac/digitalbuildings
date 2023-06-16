@@ -22,6 +22,7 @@ SS:
   opt_uses:
   - failed_alarm
   - lost_power_alarm
+  - fire_alarm
 
 EPM:
   guid: "0f7192ab-ffe1-401e-bd36-19f958c2cae1"
@@ -29,12 +30,4 @@ EPM:
   is_abstract: true
   uses:
   - floor_status
-
-BEA:
-  guid: "318598bd-7352-4ef3-a069-42c22ff21fa2"
-  description: "Basic elevator alarms"
-  is_abstract: true
-  uses:
-  - fire_alarm
-  - failed_alarm
-  - max_load_alarm
+  - elevator_status

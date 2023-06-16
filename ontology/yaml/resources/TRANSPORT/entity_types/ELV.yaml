@@ -20,11 +20,12 @@ ELV_SS:
   - ELV
   - SS  
 
-ELV_EPM_BEA:
-  guid: "22680ec1-29ab-402b-b3ac-d1be3b950e0a"
+ELV_EPM_SS:
   description: "Elevator with position/floor and basic alarms."
   is_canonical: true
   implements:
   - ELV
   - EPM
-  - BEA
+  - SS
+  opt_uses:
+  - max_load_alarm
