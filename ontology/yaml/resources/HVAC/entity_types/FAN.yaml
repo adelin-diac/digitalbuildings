@@ -503,7 +503,19 @@ FAN_SS_VSC_SSPC_FDPSM:
   - VSC
   - SSPC
   - FDPSM
-  
+
+FAN_SS_VSC_SSPM_SRC_SAVM:
+  description: "General exhaust fan with start/stop, speed sensor, run duration, supply air static pressure sensor, and supply air velocity monitoring."
+  is_canonical: true
+  implements:
+  - FAN
+  - SS
+  - VSC
+  - SRC
+  - SSPM
+  uses:
+  - supply_air_linearvelocity_sensor
+
 ###################################
 ### Existing Non-standard Types ###
 ###################################
