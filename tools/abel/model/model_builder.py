@@ -168,6 +168,27 @@ class Model(object):
 
       return model_builder, operations
 
+    @classmethod
+    def FromEntities(cls, site: Site, entities: List[Entity]) -> ...:
+      """Returns a Model instance built from a list of entity instances.
+
+      The Build method does not need to be called after this class method
+      because the entities being loaded into this method are pre-built. Meaning,
+      These entities already have their links, translations, or states connected
+      to them.
+
+      Args:
+        site: Site instance for a model.
+        entities: List of Entity instances to be a part of a Model instance.
+
+      Returns: A Model instance.
+      """
+      model_builder = cls(site)
+      model_builder.entities = entities
+      for entity in entities:
+        model_builder.guid_to_entity_map.AddEntity(entity)
+      return Model(model_builder)
+
     def Build(self) -> ...:
       """Connects ABEL graph with Guids as edges.
 
@@ -178,6 +199,17 @@ class Model(object):
       Returns:
         built Model instance
       """
+      # First add states to fields
+      for field in self.fields:
+        # For each state in the model
+        if isinstance(field, MultistateValueField):
+          for state in self.states:
+            # Create edges between states and their corresponding Multi-state
+            # value field in stances.
+            if state.reporting_entity_guid == field.reporting_entity_guid:
+              if state.std_field_name in (field.reporting_entity_field_name,
+                                          field.std_field_name):
+                field.AddState(state)
       self.site.entities = self.entities
       # For each entity, Add connections where entity is the source
       for guid in self.site.entities:
@@ -187,17 +219,6 @@ class Model(object):
             entity.AddConnection(connection)
         # For each field in the model
         for field in self.fields:
-          # For each state in the model
-          for state in self.states:
-            # Create edges between states and their corresponding Multi-state
-            # value field in stances.
-            if state.reporting_entity_guid == guid:
-              if state.std_field_name in (
-                  field.reporting_entity_field_name,
-                  field.std_field_name,
-              ):
-                if isinstance(field, MultistateValueField):
-                  field.AddState(state)
           # Link field to entity if entity is virtual
           if isinstance(entity, VirtualEntity):
             if field.entity_guid == guid:
@@ -215,6 +236,16 @@ class Model(object):
     self._states = builder.states
     self._connections = builder.connections
     self._guid_to_entity_map = builder.guid_to_entity_map
+
+  def __eq__(self, other):
+    if not isinstance(other, Model):
+      return False
+    if self.site != other.site:
+      return False
+    for entity in self.entities:
+      if entity != other.GetEntity(entity.bc_guid):
+        return False
+    return True
 
   @property
   def site(self) -> Site:

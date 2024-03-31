@@ -243,8 +243,9 @@ class BuildingConfigExport(object):
     reporting_entity_yaml = {
         CONFIG_CLOUD_DEVICE_ID: str(entity.cloud_device_id),
         CONFIG_CODE: entity.code,
-        CONFIG_ETAG: entity.etag,
     }
+    if entity.etag:
+      reporting_entity_yaml.update({CONFIG_ETAG: entity.etag})
     reporting_entity_yaml.update(self._GetConnections(entity=entity))
     if entity.translations:
       reporting_entity_yaml[CONFIG_TRANSLATION] = {}
@@ -270,7 +271,7 @@ class BuildingConfigExport(object):
               }
           )
     reporting_entity_yaml.update(
-        {CONFIG_TYPE: entity.namespace + '/' + str(entity.type_name)}
+        {CONFIG_TYPE: entity.namespace.value + '/' + str(entity.type_name)}
     )
     if operation:
       reporting_entity_yaml.update(self._AddOperationToBlock(operation))
@@ -288,12 +289,14 @@ class BuildingConfigExport(object):
     Returns:
       A dicitionary formatted for Building Config ready to be parsed into yaml.
     """
-    virtual_entity_yaml = {CONFIG_CODE: entity.code, CONFIG_ETAG: entity.etag,}
+    virtual_entity_yaml = {CONFIG_CODE: entity.code}
+    if entity.etag:
+      virtual_entity_yaml.update({CONFIG_ETAG: entity.etag})
     virtual_entity_yaml.update(self._GetConnections(entity=entity))
     if entity.links:
       virtual_entity_yaml.update({CONFIG_LINKS: self._SortLinks(entity)})
     virtual_entity_yaml.update(
-        {CONFIG_TYPE: entity.namespace + '/' + str(entity.type_name)}
+        {CONFIG_TYPE: entity.namespace.value + '/' + str(entity.type_name)}
     )
     if operation:
       virtual_entity_yaml.update(self._AddOperationToBlock(operation))
@@ -367,7 +370,11 @@ class BuildingConfigExport(object):
             ' multi-state value but has no states.'
         )
       else:
-        return_dict[CONFIG_STATES] = {
-            state.standard_state: str(state.raw_state) for state in field.states
-        }
+        config_states = {}
+        for state in field.states:
+          if state.standard_state not in config_states:
+            config_states.update({state.standard_state: [state.raw_state]})
+          else:
+            config_states.get(state.standard_state).append(state.raw_state)
+        return_dict[CONFIG_STATES] = config_states
     return return_dict
